@@ -1,1 +1,1 @@
-# garbage-bell
+# Garbage Bell App
