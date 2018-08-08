@@ -16,10 +16,11 @@ const styles = StyleSheet.create({
     paddingTop: 15,
     paddingBottom: 5,
     alignItems: 'center',
-    backgroundColor: '#F800B7'
+    backgroundColor: '#000000'
   },
   name:{
-    fontSize: 24
+    fontSize: 24,
+    color: '#F800B7'
   }
 })
 
