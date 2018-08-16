@@ -7,7 +7,7 @@ export default class Background extends Component {
     return (
       <ImageBackground
         source={require('../images/gradient.png')}
-          style={{width: width, height: height}}
+          style={styles.Background}
       >
 
       <View style={styles.ViewContainer}>
@@ -24,6 +24,10 @@ const styles=StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'flex-start',
     alignItems: 'stretch',
+  },
+  Background:{
+    width: width,
+    height: height
   }
 })
 
