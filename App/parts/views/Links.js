@@ -15,7 +15,27 @@ export default class Links extends Component {
         <Background>
         <Header />
         <View style={styles.myView}>
-          <Text style={styles.signIn}>Links Page</Text>
+          <Text>Links Page</Text>
+          <View style={styles.socialLinks}>
+            <TouchableOpacity>
+              <Image style={styles.socialIcon} source={require('../images/tco.jpg')}/>
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <Image style={styles.socialIcon} source={require('../images/tco.jpg')}/>
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <Image style={styles.socialIcon} source={require('../images/tco.jpg')}/>
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <Image style={styles.socialIcon} source={require('../images/tco.jpg')}/>
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <Image style={styles.socialIcon} source={require('../images/tco.jpg')}/>
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <Image style={styles.socialIcon} source={require('../images/tco.jpg')}/>
+            </TouchableOpacity>
+          </View>
         </View>
       </Background>
       </View>
@@ -28,8 +48,14 @@ const styles = StyleSheet.create({
     justifyContent:'center',
     alignItems: 'center',
     padding: 5,
-    marginTop: 200,
+    marginTop: 20,
   },
+  socialLinks:{
+    margin: 5,
+  },
+  socialIcon:{
+    margin: 5,
+  }
 })
 
 module.exports = Links

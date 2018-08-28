@@ -32,6 +32,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent:'center',
     padding: 5,
+    marginTop: 20,
   },
   bell:{
     width: 75
