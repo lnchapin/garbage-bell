@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View, TextInput, Button, AsyncStorage} from 'react-native';
+import {Platform, StyleSheet, Text, View, TextInput, Button, AsyncStorage, TouchableOpacity, Image, Linking} from 'react-native';
 import {Actions} from 'react-native-router-flux'
 import Sign_up from './Sign_up'
 import Home from './Home'
@@ -18,7 +18,7 @@ export default class Links extends Component {
           <Text>Links Page</Text>
           <View style={styles.socialLinks}>
             <TouchableOpacity>
-              <Image style={styles.socialIcon} source={require('../images/TCOrought.png')}/>
+              <Image style={styles.socialIcon} source={require('../images/TCOrough.png')}/>
             </TouchableOpacity>
             <TouchableOpacity>
               <Image style={styles.socialIcon} source={require('../images/Patreon.png')}/>
@@ -55,6 +55,8 @@ const styles = StyleSheet.create({
   },
   socialIcon:{
     borderRadius: 5,
+    width: 50,
+    height: 50,
     margin: 5,
   }
 })
