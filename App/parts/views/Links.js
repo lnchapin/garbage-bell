@@ -21,19 +21,19 @@ export default class Links extends Component {
               <Image style={styles.socialIcon} source={require('../images/tco.jpg')}/>
             </TouchableOpacity>
             <TouchableOpacity>
-              <Image style={styles.socialIcon} source={require('../images/tco.jpg')}/>
+              <Image style={styles.socialIcon} source={require('../images/patreon.jpg')}/>
             </TouchableOpacity>
             <TouchableOpacity>
-              <Image style={styles.socialIcon} source={require('../images/tco.jpg')}/>
+              <Image style={styles.socialIcon} source={require('../images/facebook.jpg')}/>
             </TouchableOpacity>
             <TouchableOpacity>
-              <Image style={styles.socialIcon} source={require('../images/tco.jpg')}/>
+              <Image style={styles.socialIcon} source={require('../images/instagram.jpg')}/>
             </TouchableOpacity>
             <TouchableOpacity>
-              <Image style={styles.socialIcon} source={require('../images/tco.jpg')}/>
+              <Image style={styles.socialIcon} source={require('../images/twiter.jpg')}/>
             </TouchableOpacity>
             <TouchableOpacity>
-              <Image style={styles.socialIcon} source={require('../images/tco.jpg')}/>
+              <Image style={styles.socialIcon} source={require('../images/settings.jpg')}/>
             </TouchableOpacity>
           </View>
         </View>
