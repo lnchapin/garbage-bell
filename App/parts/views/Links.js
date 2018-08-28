@@ -18,22 +18,22 @@ export default class Links extends Component {
           <Text>Links Page</Text>
           <View style={styles.socialLinks}>
             <TouchableOpacity>
-              <Image style={styles.socialIcon} source={require('../images/tco.jpg')}/>
+              <Image style={styles.socialIcon} source={require('../images/TCOrought.png')}/>
             </TouchableOpacity>
             <TouchableOpacity>
-              <Image style={styles.socialIcon} source={require('../images/patreon.jpg')}/>
+              <Image style={styles.socialIcon} source={require('../images/Patreon.png')}/>
             </TouchableOpacity>
             <TouchableOpacity>
-              <Image style={styles.socialIcon} source={require('../images/facebook.jpg')}/>
+              <Image style={styles.socialIcon} source={require('../images/facebook.png')}/>
             </TouchableOpacity>
             <TouchableOpacity>
-              <Image style={styles.socialIcon} source={require('../images/instagram.jpg')}/>
+              <Image style={styles.socialIcon} source={require('../images/instagram.png')}/>
             </TouchableOpacity>
             <TouchableOpacity>
-              <Image style={styles.socialIcon} source={require('../images/twiter.jpg')}/>
+              <Image style={styles.socialIcon} source={require('../images/twitter.png')}/>
             </TouchableOpacity>
             <TouchableOpacity>
-              <Image style={styles.socialIcon} source={require('../images/settings.jpg')}/>
+              <Image style={styles.socialIcon} source={require('../images/settings.png')}/>
             </TouchableOpacity>
           </View>
         </View>
@@ -54,6 +54,7 @@ const styles = StyleSheet.create({
     margin: 5,
   },
   socialIcon:{
+    borderRadius: 5,
     margin: 5,
   }
 })
