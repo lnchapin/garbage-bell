@@ -17,6 +17,7 @@ export default class Links extends Component {
         <View style={styles.myView}>
           <Text>Links Page</Text>
           <View style={styles.socialLinks}>
+            <View style={styles.columns}>
             <TouchableOpacity>
               <Image style={styles.socialIcon} source={require('../images/TCOrough.png')}/>
             </TouchableOpacity>
@@ -26,6 +27,8 @@ export default class Links extends Component {
             <TouchableOpacity>
               <Image style={styles.socialIcon} source={require('../images/facebook.png')}/>
             </TouchableOpacity>
+          </View>
+          <View style={styles.columns}>
             <TouchableOpacity>
               <Image style={styles.socialIcon} source={require('../images/instagram.png')}/>
             </TouchableOpacity>
@@ -35,6 +38,7 @@ export default class Links extends Component {
             <TouchableOpacity>
               <Image style={styles.socialIcon} source={require('../images/settings.png')}/>
             </TouchableOpacity>
+          </View>
           </View>
         </View>
       </Background>
@@ -58,6 +62,9 @@ const styles = StyleSheet.create({
     width: 50,
     height: 50,
     margin: 5,
+  },
+  columns:{
+    flexDirection: 'row',
   }
 })
 
