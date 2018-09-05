@@ -1,49 +1,32 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
-
+Error.stackTraceLimit = 40
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import {AppRegistry, Platform, StyleSheet, Text, View, TextInput, Button} from 'react-native';
+import { Actions, Router, Scene, Tabs } from 'react-native-router-flux';
+import Sign_in from './parts/views/Sign_in';
+import Sign_up from './parts/views/Sign_up';
+import Stats from './parts/views/Stats';
+import Home from './parts/views/Home';
+import Links from './parts/views/Links';
+import Settings from './parts/views/Settings';
 
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
-  android:
-    'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
 
-type Props = {};
-export default class App extends Component<Props> {
+export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
-      </View>
+      <Router>
+
+        <Scene  key="root">
+           {/* <Scene key="Sign_in" hideNavBar={true} component={Sign_in} initial={true} />
+           <Scene key="Sign_up" hideNavBar={true} component={Sign_up} initial={false} /> */}
+
+          <Scene key="inApp" tabs={true} hideNavBar={true}>
+            <Scene key="Stats" hideNavBar={true} component={Stats} initial={false} />
+            <Scene key="Home" hideNavBar={true} component={Home} initial={true} />
+            <Scene key="Links" hideNavBar={true} component={Links} initial={false} />
+          </Scene>
+          {/* <Scene key="Settings" hideNavBar={true} component={Settings} initial={false} /> */}
+          </Scene>
+      </Router>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
