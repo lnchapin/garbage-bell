@@ -3,10 +3,16 @@ import {AppRegistry, Platform, StyleSheet, Text, View, TextInput, Button, AsyncS
 import {Actions} from 'react-native-router-flux'
 import Header from '../components/Header'
 import Background from '../components/Background'
+import Sound from 'react-native-sound'
 
 const { width, height } = Dimensions.get("window")
 
+
 export default class Home extends Component {
+
+  onPressPlay(){
+    alert('play')
+  }
 
   render (){
     return(
@@ -15,9 +21,9 @@ export default class Home extends Component {
         <Header />
         <View style={styles.myView}>
           <Text style={styles.textStyle}>Hello</Text>
-          <TouchableOpacity>
+          <TouchableWithoutFeedback onPress={this.onPressPlay.bind(this)}>
             <Image style={styles.bell} source={require('../images/reception-bell.jpg')} resizeMode="contain"/>
-          </TouchableOpacity>
+          </TouchableWithoutFeedback>
           <Text style={styles.textStyle}>Rings Today: </Text>
         </View>
       </Background>
