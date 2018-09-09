@@ -1,9 +1,9 @@
 import React, {Component} from 'react'
-import {AppRegistry, Platform, StyleSheet, Text, View, TextInput, Button, AsyncStorage, Image, TouchableOpacity, ScrollView, ImageBackground, Dimensions } from 'react-native'
+import {AppRegistry, Platform, StyleSheet, Text, View, TextInput, Button, AsyncStorage, Image, TouchableOpacity, ScrollView, ImageBackground, Dimensions, TouchableWithoutFeedback } from 'react-native'
 import {Actions} from 'react-native-router-flux'
 import Header from '../components/Header'
 import Background from '../components/Background'
-import Sound from 'react-native-sound'
+// import Sound from 'react-native-sound'
 
 const { width, height } = Dimensions.get("window")
 
@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent:'center',
     padding: 5,
-    marginTop: 20,
+    // marginTop: 20,
   },
   bell:{
     width: 75
