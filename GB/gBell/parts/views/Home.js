@@ -20,12 +20,16 @@ export default class Home extends Component {
         <Background>
         <Header />
         <View style={styles.myView}>
-          <Text style={styles.textStyle}>Hello</Text>
+          <Text style={styles.textStyle1}>Hello</Text>
           <TouchableWithoutFeedback onPress={this.onPressPlay.bind(this)}>
+            <View>
             <Image style={styles.bell} source={require('../images/reception-bell.jpg')} resizeMode="contain"/>
+            </View>
           </TouchableWithoutFeedback>
-          <Text style={styles.textStyle}>Rings Today: </Text>
+
+          <Text style={styles.textStyle2}>Rings Today: </Text>
         </View>
+
       </Background>
       </View>
     )
@@ -38,13 +42,20 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent:'center',
     padding: 5,
-    // marginTop: 20,
+    marginTop: 30,
+    marginBottom: 250,
+    flex: 1,
   },
   bell:{
-    width: 75
+    width: 75,
+    height: 75,
+    flex:2
   },
-  textStyle:{
-
+  textStyle1:{
+    color:'white',
+  },
+  textStyle2:{
+    color:'white',
   }
 })
 
