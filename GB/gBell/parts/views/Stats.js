@@ -15,7 +15,13 @@ export default class Stats extends Component {
         <Background>
         <Header />
         <View style={styles.myView}>
-          <Text style={styles.signIn}>Stats Page</Text>
+          <Text style={styles.heading}>Number of Rings:</Text>
+          <View style={styles.body}>
+          <Text>Today: `from DB`</Text>
+          <Text>This Month: `from DB`</Text>
+          <Text>This Year: `from DB`</Text>
+          <Text>Lifetime: `from DB`</Text>
+          </View>
         </View>
       </Background>
       </View>
@@ -30,6 +36,13 @@ const styles = StyleSheet.create({
     padding: 5,
     marginTop: 20,
   },
+  heading:{
+    fontSize: 24,
+    color: 'white'
+  },
+  body:{
+    color: 'white'
+  }
 })
 
 module.exports = Stats

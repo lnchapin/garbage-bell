@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent:'center',
     padding: 5,
-    marginTop: 30,
+    marginTop: 50,
     marginBottom: 250,
     flex: 1,
   },
@@ -59,11 +59,14 @@ const styles = StyleSheet.create({
   textStyle1:{
     color:'white',
     paddingBottom: 20,
-    paddingTop: 20,
+    paddingTop: 30,
+    fontSize: 24,
+    fontFamily: 'arial'
   },
   textStyle2:{
     color:'white',
     paddingTop: 20,
+    fontSize: 24
   }
 })
 
