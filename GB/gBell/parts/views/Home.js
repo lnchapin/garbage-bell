@@ -3,15 +3,22 @@ import {AppRegistry, Platform, StyleSheet, Text, View, TextInput, Button, AsyncS
 import {Actions} from 'react-native-router-flux'
 import Header from '../components/Header'
 import Background from '../components/Background'
-// import Sound from 'react-native-sound'
+import Sound from 'react-native-sound'
 
 const { width, height } = Dimensions.get("window")
+const requireAudio = require('./ding.wav')
 
 
 export default class Home extends Component {
 
   onPressPlay(){
-    alert('play')
+    const s = new Sound(requireAudio, (e) => {
+      if (e) {
+        alert('error', e);
+        return;
+      }
+      s.play(() => s.release());
+      });
   }
 
   render (){
