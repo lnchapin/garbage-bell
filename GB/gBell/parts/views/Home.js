@@ -20,14 +20,14 @@ export default class Home extends Component {
         <Background>
         <Header />
         <View style={styles.myView}>
-          <Text style={styles.textStyle1}>Hello</Text>
+          <Text style={styles.textStyle1}>Hello `Name from DB`</Text>
           <TouchableWithoutFeedback onPress={this.onPressPlay.bind(this)}>
             <View>
             <Image style={styles.bell} source={require('../images/reception-bell.jpg')} resizeMode="contain"/>
             </View>
           </TouchableWithoutFeedback>
 
-          <Text style={styles.textStyle2}>Rings Today: </Text>
+          <Text style={styles.textStyle2}>Rings Today: `from DB`</Text>
         </View>
 
       </Background>
@@ -47,15 +47,16 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   bell:{
-    width: 75,
-    height: 75,
     flex:2
   },
   textStyle1:{
     color:'white',
+    paddingBottom: 20,
+    paddingTop: 20,
   },
   textStyle2:{
     color:'white',
+    paddingTop: 20,
   }
 })
 
