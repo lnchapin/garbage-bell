@@ -17,7 +17,7 @@ export default class Home extends Component {
         alert('error', e);
         return;
       }
-      s.play(() => s.release());
+      s.play();
       });
   }
 
