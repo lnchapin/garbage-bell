@@ -8,6 +8,7 @@ import Stats from './parts/views/Stats';
 import Home from './parts/views/Home';
 import Links from './parts/views/Links';
 import Settings from './parts/views/Settings';
+import Modal from './parts/views/Modal'
 
 
 export default class App extends React.Component {
@@ -23,6 +24,7 @@ export default class App extends React.Component {
             <Scene key="Stats" hideNavBar={true} component={Stats} initial={false} />
             <Scene key="Home" hideNavBar={true} component={Home} initial={true} />
             <Scene key="Links" hideNavBar={true} component={Links} initial={false} />
+            <Scene key="Settings" hideNavBar={true} component={Modal} initial={false} />
           </Scene>
           {/* <Scene key="Settings" hideNavBar={true} component={Settings} initial={false} /> */}
           </Scene>
