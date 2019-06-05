@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "react": "16.4.1",
-    "react-native": "0.56.0",
+    "react-native": "^0.59.8",
     "react-native-router-flux": "^4.0.1",
     "react-native-sound": "^0.10.9"
   },
